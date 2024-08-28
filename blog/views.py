@@ -9,6 +9,8 @@ def main(request: HttpRequest) -> HttpResponse:
 def myfeed(request: HttpRequest) -> HttpResponse:
     return HttpResponse("My_FEED")
 
-def article_id(request: HttpRequest) -> HttpResponse:
+def article(request: HttpRequest) -> HttpResponse:
     return ("Article_ID")
 
+def comment(request: HttpRequest) -> HttpResponse:
+    return ("Article Comment")
