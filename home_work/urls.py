@@ -21,5 +21,7 @@ from django.urls import path
 urlpatterns = [
     path("", main),
     path('my-feed/', myfeed),
+    path('article/', article),
+    path('article/comment', comment),
     path('admin/', admin.site.urls),
 ]
