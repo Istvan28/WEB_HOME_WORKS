@@ -51,3 +51,14 @@ def login(request: HttpRequest) -> HttpResponse:
 def logout(request: HttpRequest) -> HttpResponse:
     return HttpResponse("LOGOUT")
 
+def year_month(request: HttpRequest, year: int, month: int) -> HttpResponse:
+    if len(str(year)) > 4 or len(str(year)) < 4:
+        raise ValueError("Helytelen dátum")
+    if not (1 <= month <= 12):
+        raise ValueError("Helytelen dátum")
+    else:
+        return HttpResponse("YEAR MONTH")
+
+
+    
+
