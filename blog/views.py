@@ -32,3 +32,22 @@ def topics_id(request: HttpRequest, topic_id: int) -> HttpResponse:
 
 def topics_id_subscribe(request: HttpRequest, topic_id: int) -> HttpResponse:
     return HttpResponse("TOPICS ID SUBSCRIBE")
+
+def topics_id_unsubscribe(request: HttpRequest, topic_id: int) -> HttpResponse:
+    return HttpResponse("TOPICS ID UNSUBSCRIBE")
+
+def profile(request: HttpRequest) -> HttpResponse:
+    return HttpResponse("PROFILE")
+
+def register(request: HttpRequest) -> HttpResponse:
+    return HttpResponse("REGISTER")
+
+def set_password(request: HttpRequest) -> HttpResponse:
+    return HttpResponse("SET PASSWORD")
+
+def login(request: HttpRequest) -> HttpResponse:
+    return HttpResponse("LOGIN")
+
+def logout(request: HttpRequest) -> HttpResponse:
+    return HttpResponse("LOGOUT")
+
