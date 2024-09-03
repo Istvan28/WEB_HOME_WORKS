@@ -7,31 +7,31 @@ def main(request: HttpRequest) -> HttpResponse:
     return render(request, template_name = 'index.html')
 
 def myfeed(request: HttpRequest) -> HttpResponse:
-    return HttpResponse("My_FEED")
+    return render(request, template_name = 'my-feed.html')
 
 def article_id(request: HttpRequest, article_id: int) -> HttpResponse:
-    return HttpResponse("Article ID")
+    return render(request, template_name = 'article_id.html')
 
 def comment(request: HttpRequest, article_id: int) -> HttpResponse:
     return HttpResponse("Comment")
 
 def update(request: HttpRequest, article_id: int) -> HttpResponse:
-    return HttpResponse("ARTICLE UPDATE")
+    return render(request, template_name = 'article_id_update.html')
 
 def delete(request: HttpRequest, article_id: int) -> HttpResponse:
     return HttpResponse("ARTICLE DELETE")
 
 def topics(request: HttpRequest) -> HttpResponse:
-    return HttpResponse("TOPICS")
+   return render(request, template_name = 'topics.html')
 
 def create(request: HttpRequest) -> HttpResponse:
-    return HttpResponse("CREATE")
+   return render(request, template_name = 'create.html')
 
 def topics_id(request: HttpRequest, topic_id: int) -> HttpResponse:
-    return HttpResponse("TOPICS ID")
+    return render(request, template_name = 'topics_id.html')
 
 def topics_id_subscribe(request: HttpRequest, topic_id: int) -> HttpResponse:
-    return HttpResponse("TOPICS ID SUBSCRIBE")
+    return render(request, template_name = 'topics_id.html')
 
 def topics_id_unsubscribe(request: HttpRequest, topic_id: int) -> HttpResponse:
     return HttpResponse("TOPICS ID UNSUBSCRIBE")
@@ -40,13 +40,13 @@ def profile(request: HttpRequest) -> HttpResponse:
     return render(request, template_name = 'profile.html')
 
 def register(request: HttpRequest) -> HttpResponse:
-    return HttpResponse("REGISTER")
+    return render(request, template_name = 'register.html')
 
 def set_password(request: HttpRequest) -> HttpResponse:
-    return HttpResponse("SET PASSWORD")
+    return render(request, template_name = 'set-password.html')
 
 def login(request: HttpRequest) -> HttpResponse:
-    return HttpResponse("LOGIN")
+   return render(request, template_name = 'login.html')
 
 def logout(request: HttpRequest) -> HttpResponse:
     return HttpResponse("LOGOUT")

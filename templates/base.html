@@ -7,21 +7,23 @@
     <link rel="stylesheet" href={%static 'index.css' %} />
   </head>
   <body>
+    {%block header%}
     <header>
       <nav class="Nav_block">
         <a class="Button" href="/">HOME</a>
-        <a class="Button" href="my-feed/">MY FEED</a>
-        <a class="Button" href="profile/">PROFILE</a>
-        <a class="Button" href="create/">CREATE</a>
-        <a class="Button" href="login/">LOGIN</a>
-        <a class="Button" href="register/">REGISTER</a>
-        <a class="Button" href="topics/">TOPICS</a>
-        <a class="Button" href="set-password/">SET PASSWORD</a>
-        <a class="Button" href="topics/topics_id">TOPICS ID</a>
+        <a class="Button" href="{% url 'my-feed'%}">MY FEED</a>
+        <a class="Button" href="{% url 'profile'%}">PROFILE</a>
+        <a class="Button" href="{% url 'create'%}">CREATE</a>
+        <a class="Button" href="{% url 'login'%}">LOGIN</a>
+        <a class="Button" href="{% url 'register'%}">REGISTER</a>
+        <a class="Button" href="{% url 'topics'%}">TOPICS</a>
+        <a class="Button" href="{% url 'set-password'%}">SET PASSWORD</a>
+        <a class="Button" href="topics/topic_id">TOPIC ID</a>
         <a class="Button" href="article_id">ARTICLE ID</a>
         <a class="Button" href="article_id/update">ARTICLE ID UPDATE</a>
         <a class="Button" href="year/month">YEAR MONTH</a>
       </nav>
     </header>
+    {%endblock%}
   </body>
 </html>
