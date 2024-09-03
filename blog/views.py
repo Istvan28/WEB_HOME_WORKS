@@ -4,7 +4,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def main(request: HttpRequest) -> HttpResponse:
-    return HttpResponse("Szia")
+    return render(request, template_name = 'index.html')
 
 def myfeed(request: HttpRequest) -> HttpResponse:
     return HttpResponse("My_FEED")
@@ -37,7 +37,7 @@ def topics_id_unsubscribe(request: HttpRequest, topic_id: int) -> HttpResponse:
     return HttpResponse("TOPICS ID UNSUBSCRIBE")
 
 def profile(request: HttpRequest) -> HttpResponse:
-    return HttpResponse("PROFILE")
+    return render(request, template_name = 'profile.html')
 
 def register(request: HttpRequest) -> HttpResponse:
     return HttpResponse("REGISTER")
