@@ -18,7 +18,7 @@
         <a class="Button" href="{% url 'register'%}">REGISTER</a>
         <a class="Button" href="{% url 'topics'%}">TOPICS</a>
         <a class="Button" href="{% url 'set-password'%}">SET PASSWORD</a>
-        <a class="Button" href="topics/topic_id">TOPIC ID</a>
+        <a class="Button" href={% url 'topic_id' 1 %}>TOPIC ID</a>
         <a class="Button" href="article_id">ARTICLE ID</a>
         <a class="Button" href="article_id/update">ARTICLE ID UPDATE</a>
         <a class="Button" href="year/month">YEAR MONTH</a>

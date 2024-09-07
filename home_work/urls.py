@@ -32,7 +32,7 @@ urlpatterns = [
     path('<article_id>/comment', comment),
     path('<article_id>/update', update),
     path('<article_id>/delete', delete),
-    path('topics/<topic_id>/',topics_id),
+    path('topics/<topic_id>/',topics_id, name='topic_id'),
     path('topics/<topic_id>/subscribe/', topics_id_subscribe),
     path('topics/<topic_id>/unsubscribe/', topics_id_unsubscribe),
     path('<int:year>/<int:month>/', year_month),
