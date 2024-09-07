@@ -28,7 +28,7 @@ urlpatterns = [
     path('login/', login, name = 'login'),
     path('set-password/', set_password, name = 'set-password'),
     path('logout/', logout),
-    path('<article_id>/', article_id),
+    path('<article_id>/', article_id, name = 'article_id'),
     path('<article_id>/comment', comment),
     path('<article_id>/update', update),
     path('<article_id>/delete', delete),
